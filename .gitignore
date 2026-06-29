@@ -1,0 +1,38 @@
+# Build artifacts
+build/
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+
+# Visual Studio files
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.suo
+*.user
+*.db
+*.opendb
+.vs/
+
+# Compiled object files
+*.obj
+*.o
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Executables (but we keep executable/ folder since that's intentional)
+# We don't ignore executable/AlgoExchange.exe because we want to ship it.
+*.exe
+!executable/*.exe

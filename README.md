@@ -50,32 +50,21 @@ Finds the cheapest way to break down a massive block order (e.g. 10,000 shares) 
 
 ---
 
-## 🚀 Build Instructions (Windows)
+## 🚀 Running the Pre-compiled Executable (Windows)
 
-The project uses CMake and is designed to build on Windows with MSVC.
+The project includes a pre-compiled executable so you don't have to build it from scratch.
 
-### Prerequisites
-- CMake (3.10+)
-- Visual Studio (with Desktop development with C++ workload)
+### Instructions
 
-### Compilation
-Open a **Developer PowerShell for VS** and run:
+1. Navigate to the `executable/` folder.
+2. Run `AlgoExchange.exe`.
 
 ```powershell
-# 1. Create a build directory
-mkdir build
-cd build
-
-# 2. Generate build files
-cmake ..
-
-# 3. Compile in Release mode
-cmake --build . --config Release
-
-# 4. Run the executable from the root directory
-cd ..
-.\build\Release\AlgoExchange.exe
+cd executable
+.\AlgoExchange.exe
 ```
+
+*Note: The `executable/` folder already includes the necessary `data/` files (like `stocks.txt`, `prices.txt`, etc.) for the engine to run out of the box.*
 
 ---
 
